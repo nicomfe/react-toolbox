@@ -20,6 +20,9 @@
       "url": "http://javivelasco.com/"
     }
   ],
+  "files":[
+    "./lib"
+  ]
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react-toolbox/react-toolbox.git"
