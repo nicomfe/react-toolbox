@@ -37,6 +37,8 @@ class AutocompleteTest extends React.Component {
 }
 ```
 
+If you want to provide a theme via context, the component key is `RTAutocomplete`.
+
 ## Properties
 
 | Name                | Type                   | Default         | Description|
@@ -50,6 +52,22 @@ class AutocompleteTest extends React.Component {
 | `onChange`          | `Function`             |                 | Callback function that is fired when the components's value changes.|
 | `source`            | `Object` or `Array`    |                 | Object of key/values or array representing all items suggested. |
 | `selectedPosition`  | `String`               |  `above`        | Determines if the selected list is shown above or below input. It can be `above` or `below`. |
+| `showSuggestionsWhenValueIsSet` | `Bool`     | `false`         | If true, the list of suggestions will not be filtered when a value is selected, until the query is modified. |
 | `value`             | `String` or `Array`    |                 | Value or array of values currently selected component.|
 
 Additional properties will be passed to the Input Component so you can use `hint`, `name` ... etc.
+
+## Theme
+
+| Name     | Description|
+|:---------|:-----------|
+| `active` | Used for a suggestion when it's active.|
+| `autocomplete`  | Used for the root element.|
+| `focus`   | Used when the input is focused.|
+| `input`   | Used to style the `Input` component.|
+| `label`   | Used for the label.|
+| `suggestion`   | Used to style each suggestion.|
+| `suggestions`   | Used to style the suggestions container.|
+| `up`   | Used for the suggestions when it's opening to the top.|
+| `value`   | Classname used for a single value.|
+| `values`   | Classname used for the values container.|
